@@ -4,30 +4,25 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { CartComponent } from './cart/cart.component';
+// import { TopBarComponent } from './top-bar/top-bar.component';
+// import { ProductListComponent } from './product-list/product-list.component';
+// import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-    ])
+    // RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
-    ProductListComponent,
-    CartComponent
+    // TopBarComponent,
+    // ProductListComponent,
+    // CartComponent,
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
