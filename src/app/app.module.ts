@@ -4,6 +4,9 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { ListComponent } from './list/list.component';
+import { ItemComponent } from './item/item.component';
 // import { TopBarComponent } from './top-bar/top-bar.component';
 // import { ProductListComponent } from './product-list/product-list.component';
 // import { CartComponent } from './cart/cart.component';
@@ -16,6 +19,9 @@ import { AppComponent } from './app.component';
   ],
   declarations: [
     AppComponent,
+    TabsComponent,
+    ListComponent,
+    ItemComponent,
     // TopBarComponent,
     // ProductListComponent,
     // CartComponent,
