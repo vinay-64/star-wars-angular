@@ -1,7 +1,7 @@
 <div>
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link" routerLinkActive="active" routeLink="/characters/all"
+      <a class="nav-link" routerLinkActive="active" routerLink="/characters/all"
         >All</a
       >
     </li>
@@ -9,15 +9,18 @@
       <a
         class="nav-link"
         routerLinkActive="active"
-        routeLink="/characters/light"
+        routerLink="/characters/light"
         >Light</a
       >
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLinkActive="active" routeLink="/characters/dark"
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        routerLink="/characters/dark"
         >Dark</a
       >
     </li>
   </ul>
-  <app-list [characters]="getCharacters()"></app-list>
+  <router-outlet></router-outlet>
 </div>

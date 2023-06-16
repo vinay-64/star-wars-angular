@@ -12,7 +12,7 @@ import { LogService } from './log.service';
 import { CreateCharacterComponent } from './create-character/create-character.component';
 import { HeaderComponent } from './header/header.component';
 
-type PathMatch = 'full' | 'prefix' | undefined;
+type PathMatch = 'full';
 
 const routes = [
   {
