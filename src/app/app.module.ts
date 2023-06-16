@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
+import { StarWarsService } from './star-wars.service';
+import { LogService } from './log.service';
+// import { StarWarsService } from './star-wars.service';
 // import { TopBarComponent } from './top-bar/top-bar.component';
 // import { ProductListComponent } from './product-list/product-list.component';
 // import { CartComponent } from './cart/cart.component';
@@ -27,6 +30,7 @@ import { ItemComponent } from './item/item.component';
     // CartComponent,
   ],
   bootstrap: [AppComponent],
+  providers: [StarWarsService, LogService],
 })
 export class AppModule {}
 
