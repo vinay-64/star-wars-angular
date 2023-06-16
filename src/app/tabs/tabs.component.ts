@@ -25,7 +25,7 @@ export class TabsComponent implements OnInit {
 
   getCharacters() {
     this.characters = this.swService.getCharacters(this.chosenList);
-    console.log(this.characters);
+    // console.log(this.characters);
     return this.characters;
   }
 }
