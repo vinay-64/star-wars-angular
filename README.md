@@ -1,4 +1,4 @@
-![image](https://github.com/vinay-64/star-wars-angular/assets/56100155/e97e990e-b9cb-4838-837c-fa806b2de674)# star-wars-angular
+# star-wars-angular
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/jbjfmb)
 
@@ -18,3 +18,5 @@ Navigating to the component from the same component :
 
    So, Observable is an easy way to subscribe to some event which might happen in the future, then execute some code when it happens without having to wait for it now. And that is what params is.
    ![image](https://github.com/vinay-64/star-wars-angular/assets/56100155/4bb2b31f-eebb-4422-8e2d-c0b8405e31bb)
+   
+*** When you go to another component and come again to the same component, Angular will destroy and re-create the component. But, It won't destroy any subscriptions, and therefore, it will stack into the memory. So, it is recommended to unsubscribe to it, whenever the component destroys using ngOnDestroy() method. 
