@@ -48,6 +48,7 @@ First, you would need to import the necessary modules and services:
 
    Note: In a real application, you would typically use Angular's HttpClient module to make actual HTTP requests to an API that provides stock prices. The example above uses the interval function for simplicity and demonstration purposes.
 
+   *** The observables we are subscribed to, over time can emit data. It's an asynchronous task and we are not blocking our current executed code to wait for that emitted data, instead we are subscribing to the observable. So that we will get the emitted data dynamically.
 
 
 
