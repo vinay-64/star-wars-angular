@@ -20,3 +20,50 @@ Navigating to the component from the same component :
    ![image](https://github.com/vinay-64/star-wars-angular/assets/56100155/4bb2b31f-eebb-4422-8e2d-c0b8405e31bb)
    
 *** When you go to another component and come again to the same component, Angular will destroy and re-create the component. But, It won't destroy any subscriptions, and therefore, it will stack into the memory. So, it is recommended to unsubscribe to it, whenever the component destroys using ngOnDestroy() method. 
+
+
+**Observables:**
+
+   In Angular, an observable is an essential concept used for handling asynchronous data streams. It represents a sequence of values that are emitted over time. Observables are part of the Reactive Extensions for JavaScript (RxJS) library, which is widely used in Angular applications.
+
+   Observables are used extensively in Angular for various purposes, such as handling HTTP requests, event handling, and data manipulation. They provide a way to handle asynchronous operations in a more elegant and streamlined manner compared to traditional callbacks or promises.
+
+   Observables can emit multiple values over time, allowing you to handle data streams that change dynamically. They provide a range of operators to transform, filter, combine, and manipulate the emitted values. Observables follow the Observer pattern, where there are observers (subscribers) that can subscribe to an observable to receive its emitted values.
+
+   Suppose you have a component in your Angular application that needs to display real-time stock prices. You want the stock prices to update dynamically as they change. In this scenario, you can use an observable to handle the data stream of stock prices.
+
+First, you would need to import the necessary modules and services:
+
+![image](https://github.com/vinay-64/star-wars-angular/assets/56100155/f19086f3-798c-4cbd-ac82-22baa99a894c)
+
+   In this example, the StockPricesComponent implements the OnInit interface and contains a property stockPrices to store the fetched stock prices.
+
+   Inside the ngOnInit lifecycle hook, we call the fetchStockPrices() method, which returns an observable representing the stock prices data stream. We subscribe to this observable and assign the emitted prices to the stockPrices property.
+
+   The fetchStockPrices() method uses the interval function from RxJS to simulate fetching stock prices every second. The take(5) operator limits the stream to emit only 5 stock prices for demonstration purposes. In a real scenario, you would replace this with an actual API call to fetch stock prices.
+
+   Finally, in the template, we use the *ngFor directive to iterate over the stockPrices array and display each price.
+
+   With this implementation, the stockPrices array will be updated automatically every second as new prices are emitted by the observable. This allows your component to reactively update the UI with the latest stock prices without manual intervention.
+
+   Note: In a real application, you would typically use Angular's HttpClient module to make actual HTTP requests to an API that provides stock prices. The example above uses the interval function for simplicity and demonstration purposes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
